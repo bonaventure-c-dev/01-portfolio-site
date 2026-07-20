@@ -96,11 +96,11 @@
 
     /* ================================================
     ===================================================
-    ================
-        HERO SECTION (Centered Column)
+    =========================
+        3. HERO SECTION (Centered Column)
+          =====================================
         =====================================
-    ======================================
-    ===================================
+        ===================================
     */
     #hero{
         display: flex;
@@ -143,12 +143,12 @@
     }
     
     /* ================================================
-    =======================================================
-    ====================
-    4. PROJECTS SECTION
-    =====================================
-    ==================================
-    ================================
+    ===================================================
+    =============================
+        4. PROJECTS SECTION
+          ====================================
+        ====================================
+        =================================
     */
     #projects{
         max-width: 1000px;
@@ -163,7 +163,7 @@
         padding-left: 15px;
     }
 
-    .project-grid{
+    .projects-grid{
         display: grid;
         grid-template-columns: repeat(auto-fit,
          minmax(300px, 1fr));
@@ -205,10 +205,101 @@
         text-decoration: underline;
     }
 
+    .project-btn-container{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+        /* =================================================
+        ====================================================
+        ======================
+            5. CONTACT SECTION
+            ========================================
+        =======================================
+        ==================================
+        */
+        /* Contact Section Layout */
+    #contact {
+        padding: 60px 20px;
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto; 
+        /* Centers the whole section on the page */
+    }
+
+    #contact p {
+        color: #8892b0; 
+        /* Soft slate gray for description text */
+        margin-bottom: 30px;
+        line-height: 1.6;
+    }
+
+    /* Flex layout to align the links beautifully */
+    .contact-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Individual contact links styling */
+    .contact-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: #64ffda;
+        /* My signature mint color */
+        text-decoration: none;
+        font-size: 1.1rem;
+        padding: 10px 20px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+
+    /* Elegant hover state for the contact items */
+    .contact-item:hover {
+        background-color: rgba(100, 255, 218, 0.1); 
+        /* Subtle mint tint background */
+        border-color: #64ffda; 
+        /* Mint border appears */
+        transform: translateY(-2px); 
+        /* Tiny lift up */
+    }
+
+    .contact-item .icon {
+        font-size: 1.3rem;
+    }
+
+    /* Container to give breathing room away from screen edges */
+    .contact-container {
+        max-width: 700px;        
+         /* Limits width so lines aren't too long */
+        margin: 0 auto;          
+         /* Centers the container horizontally */
+        padding: 60px 20px;      
+         /* Top/Bottom space, plus 20px breathing room on left/right edges */
+        text-align: center;       
+        /* Centers the heading, paragraph, and links */
+    }
+
+    .contact-container h2 {
+        margin-bottom: 15px;   
+           /* Creates space under "Get In Touch" */
+    }
+
+    .contact-container p {
+        line-height: 1.6;
+        margin-bottom: 30px;
+        color: #8892b0;           
+        /* Soft readable text color */
+}
+
     /* ================================================
     ======================================================
     ====================
-        5. FOOTER
+        6. FOOTER
         =====================================
     =====================================
     =================================
