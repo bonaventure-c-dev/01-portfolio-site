@@ -97,12 +97,12 @@
     /* ================================================
     ===================================================
     =========================
-        3. HERO SECTION (Centered Column)
+        3. ABOUT SECTION (Centered Column)
           =====================================
         =====================================
         ===================================
     */
-    #hero{
+    #about{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -113,12 +113,12 @@
         margin-top: 60px;
     }
 
-    #hero h1{
+    #about h1{
         font-size: 3rem;
         margin-bottom: 15px;
     }
 
-    #hero p{
+    #about p{
         font-size: 1.25rem;
         color: var(--text-secondary);
         max-width: 600px;
